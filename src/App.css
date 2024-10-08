@@ -4,22 +4,44 @@
   list-style: none;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+  font-family: sans-serif;
+}
+
+.App{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
   background-color: black;
+}
+
+.containerLateral{
+  background-color: rgb(18, 18, 18);
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .conteudoLateral{
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 2rem;
-  width: 20vw;
-  height: 100vh;
-  background-color: rgb(5, 5, 5);
+  width: 17vw;
+  height: 70vh;
+  background-color: rgb(26, 26, 26);
+  border: solid 2px rgb(53, 53, 53);
+  border-radius: 15px;
 }
 
 .logo{
   height: auto;
-  width: 5rem;
+  width: 6rem;
+}
+
+.logomarca{
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
 .menuLateral{
@@ -29,14 +51,30 @@
 }
 
 .menuLateral li{
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.btn-primary{
+  margin-top: 2rem;
+  padding: 10px;
+  background-color: #295bff;
+  border: solid 1px #295bff;
+  border-radius: 25px;
+  width: 16rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.Stories{
+  background-color: rgb(32, 33, 33);
+  width: 45vw;
+  height: 20vh;
+}
+
+.Postagens{
+  background-color: rgb(17, 17, 17);
+  width: 45vw;
+  height: 10vh;
+}
