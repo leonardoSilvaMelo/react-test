@@ -8,6 +8,8 @@ import { IoSearchCircle } from "react-icons/io5";
 import { IoChatbubbleEllipsesSharp } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
+import { IoLogOut } from "react-icons/io5";
+
 import BtnTuit from '../componentes/BotaoTuit';
 import HR from '../componentes/HR';
 
@@ -27,49 +29,49 @@ export default function ConteudoLateral() {
                     <ul className='menuLateral'>
 
                         <ListItem texto="Home" icone={
-                            <RiHome5Fill style={{
+                            <RiHome5Fill className='icone-menu-lateral' style={{
                                 marginBottom: "-10px",
                                 fontSize: "2.4rem"
                             }} />}
                         />
 
                         <ListItem texto="Explorar" icone={
-                            <MdOutlineTravelExplore style={{
+                            <MdOutlineTravelExplore className='icone-menu-lateral' style={{
                                 marginBottom: "-10px",
                                 fontSize: "2.4rem"
                             }} />}
                         />
 
                         <ListItem texto="Notificações" icone={
-                            <IoNotificationsCircle style={{
+                            <IoNotificationsCircle className='icone-menu-lateral' style={{
                                 marginBottom: "-10px",
                                 fontSize: "2.4rem"
                             }} />}
                         />
 
                         <ListItem texto="Mensagens" icone={
-                            <IoChatbubbleEllipsesSharp style={{
+                            <IoChatbubbleEllipsesSharp className='icone-menu-lateral' style={{
                                 marginBottom: "-10px",
                                 fontSize: "2.4rem"
                             }} />}
                         />
 
                         <ListItem texto="Pesquisar" icone={
-                            <IoSearchCircle style={{
+                            <IoSearchCircle className='icone-menu-lateral' style={{
                                 marginBottom: "-10px",
                                 fontSize: "2.5rem"
                             }} />}
                         />
 
                         <ListItem texto="Conta" icone={
-                            <FaUserCircle style={{
+                            <FaUserCircle className='icone-menu-lateral' style={{
                                 marginBottom: "-10px",
                                 fontSize: "2.4rem"
                             }} />}
                         />
 
                         <ListItem texto="Configurações" icone={
-                            <FaGear style={{
+                            <FaGear className='icone-menu-lateral' style={{
                                 marginBottom: "-10px",
                                 fontSize: "2.4rem"
                             }} />}
@@ -78,7 +80,13 @@ export default function ConteudoLateral() {
                     </ul>
                 </div>
                 <BtnTuit/>
-                <HR/>
+                {/* <HR/> */}
+                {/* <ListItem texto="Sair" icone={
+                            <IoLogOut className='icone-menu-lateral' style={{
+                                marginBottom: "-10px",
+                                fontSize: "2.4rem"
+                            }} />}
+                        /> */}
             </div>
         </div>
     );
