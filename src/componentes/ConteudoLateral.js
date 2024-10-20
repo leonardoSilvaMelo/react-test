@@ -26,6 +26,7 @@ export default function ConteudoLateral() {
                 </div>
 
                 <div>
+                
                     <ul className='menuLateral'>
 
                         <ListItem texto="Home" icone={

@@ -16,12 +16,12 @@
 .App{
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  justify-content: center;
+  /* height: 100vh; */
   background-color: black;
 }
 
 .containerLateral{
-  /* background-color: rgb(18, 18, 18); */
   background-color: black;
   width: 22vw;
   display: flex;
@@ -30,13 +30,15 @@
 }
 
 .conteudoLateral{
+  top: 1.5rem;
+  position: fixed;
   display: flex;
   flex-direction: column;
   padding: 2rem;
   width: 15vw;
   height: 85vh;
-  background-color: rgb(26, 26, 26);
-  /* border: solid 2px rgb(53, 53, 53); */
+  background-color: rgba(255, 255, 255, 0.107);
+  border: 1px solid rgba(226, 226, 226, 0.195);
   border-radius: 15px;
 }
 
@@ -100,14 +102,159 @@
   border: solid 1px rgb(92, 92, 92);
 }
 
-.Stories{
-  background-color: rgb(32, 33, 33);
+.stories{
+  background-color: rgba(255, 255, 255, 0.107);
+  margin-top: 1.5rem;
+  display: flex;
   width: 45vw;
-  height: 20vh;
+  gap: 1rem;
+  padding: 10px;
+  border: 1px solid rgba(226, 226, 226, 0.195);
+  border-radius: 10px;
 }
 
-.Postagens{
-  background-color: rgb(17, 17, 17);
-  width: 45vw;
-  height: 10vh;
+.storie-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.storie-container img{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: solid 2px #3867ff;
+}
+
+.postagens-container{
+  margin-top: 1rem;
+  width: 46vw;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Post{
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.107);
+  border: 1px solid rgba(226, 226, 226, 0.195);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.PostCabecalho{
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  
+}
+
+.PostHeader{
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 24rem;
+}
+
+.IdentificacaoUsuario{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.PostCabecalho span{
+  color: rgba(255, 255, 255, 0.711);
+  font-size: 0.9rem;
+}
+
+.btnSeguir{
+  background-color: rgba(255, 255, 255, 0.107);
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid rgba(226, 226, 226, 0.195);
+  width: 5rem;
+}
+
+.btnSeguir:hover{
+  cursor: pointer;
+  transition: 0.9s;
+  background-color: #3e29ff;
+  border: solid 1px #3e29ff;
+  box-shadow: 0 0 20px #3e29ff;
+}
+
+.PostCabecalho img{
+  width: 3.5rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.PostImagem{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background: black;
+}
+
+.textoPostagem{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.PostFooter{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.containerFinal{
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudoFinal{
+  top: 1.5rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 20vw;
+  height: 85vh;
+  background-color: rgba(255, 255, 255, 0.107);
+  border: 1px solid rgba(226, 226, 226, 0.195);
+  border-radius: 15px;
+}
+
+.barraPesquisa-container{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.barraPesquisa-input{
+  width: 14rem;
+  background-color: rgba(255, 255, 255, 0.107);
+  border: 1px solid rgba(226, 226, 226, 0.195);
+  border-radius: 10px;
+  font-weight: 500;
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+.titulo{
+  margin-top: 1rem;
+}
+
+.topcisTrends{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.366);
+}
+
+.topcisTrends-subtitle{
+  color: rgba(255, 255, 255, 0.486);
 }

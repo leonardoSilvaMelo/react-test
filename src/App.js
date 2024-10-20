@@ -1,4 +1,5 @@
 import './App.css';
+import ConteudoFinal from './componentes/ConteudoFinal';
 import ConteudoLateral from './componentes/ConteudoLateral';
 import ConteudoPrincipal from './componentes/ConteudoPrincipal';
 
@@ -8,6 +9,8 @@ function App() {
       <ConteudoLateral/>
 
       <ConteudoPrincipal/>
+
+      <ConteudoFinal/>
     </div>
   );
 }
